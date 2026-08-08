@@ -289,7 +289,7 @@ void xuatSoLeMaTran(int row, int col)
         {
             if (a[i][j] % 2 != 0)
             {
-                printf("Phan tu le tai a[%d][%d]: ", i, j, a[i][j]);
+                printf("Phan tu le tai a[%d][%d] = %d\n: ", i, j, a[i][j]);
             }
         }
     }

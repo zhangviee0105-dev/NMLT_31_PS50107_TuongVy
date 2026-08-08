@@ -37,3 +37,4 @@ void checkTriangle(float a, float b, float c)
         printf("Day khong phai la Tam giac. \n");
     }
 }
+
