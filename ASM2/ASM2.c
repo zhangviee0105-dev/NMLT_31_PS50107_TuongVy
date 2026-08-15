@@ -20,11 +20,16 @@ void kiemTraSoNguyen(int x) {
             printf("- %d la so nguyen to \n", x);
         else
             printf("- %d khong phai la so nguyen to. \n", x);
-
-        if (sqrt(x) * sqrt(x) != x || x < 0)
-            printf("- %d khong phai la so chinh phuong. \n", x);
-        else if (sqrt(x) * sqrt(x) == x)
+        int can = (int)sqrt(x);
+        if (x>=0 && can * can ==x)
             printf("- %d la so chinh phuong. \n", x);
+        else
+        printf ("- %d khong phai la so chinh phuong. \n", x);
+
+        //if (sqrt(x) * sqrt(x) != x || x < 0)
+            //printf("- %d khong phai la so chinh phuong. \n", x);
+        //else if (sqrt(x) * sqrt(x) == x)
+           // printf("- %d la so chinh phuong. \n", x);
         printf("\n");
     return;
 }
@@ -299,7 +304,7 @@ int main() {
             case 4:
                 int soDien;
                 printf("Nhap so dien tieu thu trong thang: ");
-scanf("%d", &soDien);
+                scanf("%d", &soDien);
                 tinhDien(soDien);
                 break;
             case 5: 
